@@ -42,7 +42,7 @@ def make_shares(secret: int, t: int, n: int, prime: int) -> list[int]:
     return shares
 
 
-if __name__ == "__main__":
+def main():
     S = int(input("--Please enter your Secret: "))
     t = int(input("--Please enter minimum threshold(t): "))
     n = int(input("--Please enter number of shares(n): "))
@@ -50,3 +50,7 @@ if __name__ == "__main__":
 
     for share in make_shares(S, t, n, p):
         print(f"(Xi={share[0]}, Yi={share[1]})")
+
+
+if __name__ == "__main__":
+    main()
