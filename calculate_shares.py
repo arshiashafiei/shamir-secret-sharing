@@ -37,9 +37,9 @@ def make_shares(secret: int, t: int, n: int, prime: int) -> list[int]:
     print()
     print("======")
 
-    points = [(i, evaluate_polynomial(coefficients, i, prime))
+    shares = [(i, evaluate_polynomial(coefficients, i, prime))
               for i in range(1, n + 1)]  # Y_i's set
-    return points
+    return shares
 
 
 if __name__ == "__main__":
